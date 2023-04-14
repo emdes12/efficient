@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  font-style: normal;
+}
+
+body {
+  max-width: 2400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-section {
+  width: 100%;
+  background-image: url("./assets/images/african-american-businesswoman-passing-documents-colleague\ 1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-overlay {
+  padding: 389px 30px 89px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.71);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-overlay > span {
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-overlay > h3 {
+  font-weight: 900;
+  font-size: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 74px;
+}
+
+.filter-search {
+  background-color: rgba(84, 174, 188, 0.46);
+  max-width: 1118px;
+  border-radius: 20px;
+  width: 100%;
+  padding: 30px;
+}
+
+.search form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+select {
+  border: none;
+  width: 242px;
+  height: 85px;
+  background: #c6e4e9;
+  border-radius: 10px;
+  text-transform: uppercase;
+  padding: 27px 22px;
+}
