@@ -23,7 +23,7 @@ body {
 }
 
 .hero-overlay {
-  padding: 389px 30px 89px;
+  padding: 309px 30px 89px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.71);
   color: #fff;
@@ -35,14 +35,14 @@ body {
 
 .hero-overlay > span {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .hero-overlay > h3 {
   font-weight: 900;
-  font-size: 70px;
+  font-size: 60px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 74px;
@@ -50,24 +50,89 @@ body {
 
 .filter-search {
   background-color: rgba(84, 174, 188, 0.46);
-  max-width: 1118px;
+  max-width: 900px;
   border-radius: 20px;
   width: 100%;
-  padding: 30px;
+  padding: 25px;
 }
 
 .search form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 15px;
 }
 
-select {
+.search > form > .select-wrap > select,
+.search > form > .search-btn-wrap > button {
+  width: 100%;
+  -webkit-appearance: none;
   border: none;
-  width: 242px;
-  height: 85px;
   background: #c6e4e9;
   border-radius: 10px;
   text-transform: uppercase;
-  padding: 27px 22px;
+  padding: 10px;
+  font-size: 16px;
+  height: 55px;
+  font-weight: 400 !important;
+}
+
+.select-wrap,
+.search-btn-wrap {
+  position: relative;
+}
+
+.select-wrap > span,
+.search-btn-wrap span {
+  position: absolute;
+  background-image: url("./assets/icon/Groupselect-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+  z-index: 20;
+  top: 50%;
+  right: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.search > form > .search-btn-wrap > button {
+  background-color: #023347;
+  color: #fff;
+  text-align: left;
+}
+
+.search-btn-wrap span {
+  background-image: url(./assets/icon/Vectorsearch-icon.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.filter {
+  margin-top: 15px;
+  border-top: 2px solid #c6e4e9;
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.filter span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 38px;
+  padding: 8px 5px;
+  cursor: pointer;
+}
+
+.filter span.selected {
+  background: #023347;
+}
+
+@media (max-width: 900px) {
+  .search form,
+  .filter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
