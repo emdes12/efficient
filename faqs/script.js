@@ -2,7 +2,15 @@
 
 // get all faq head element
 const faq = document.querySelectorAll(".faq");
+let answerHeights = [];
+const faqAnswers = document.querySelectorAll(".faq-answer")
 
+faqAnswer.forEach(ans => {
+    const high = ans.getBoundingClientRect().height
+    answerHeights.push(high)
+    ans.getBoundingClientRect().height = "0px"
+}
+alert(answerHeights)
 // add listener Click to all faq head
 faq.forEach(qa => {
     // get faq head in selected faq
