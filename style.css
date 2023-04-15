@@ -129,6 +129,7 @@ body {
   background-color: #023347;
   color: #fff;
   text-align: left;
+  cursor: pointer;
 }
 
 .search-btn-wrap span {
