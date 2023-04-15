@@ -74,8 +74,7 @@ li.faq {
     display: none;
 }
 
-.faq.active .img-open,
-.faq.active .faq-answer {
+.faq.active .img-open {
     display: block;
 }
 
@@ -86,7 +85,7 @@ li.faq {
 .faq-answer {
     font-weight: 400;
     font-size: 18px;
-    display: none;
+    height: 0px;
     line-height: 23px;
     color: #fff;
     padding-top: 10px;
