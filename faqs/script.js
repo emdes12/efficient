@@ -8,7 +8,7 @@ const faqAnswers = document.querySelectorAll(".faq-answer")
 faqAnswer.forEach(ans => {
     const high = ans.getBoundingClientRect().height
     answerHeights.push(high)
-    ans.getBoundingClientRect().height = "0px"
+    ans.style.height = "0px"
 }
 alert(answerHeights)
 // add listener Click to all faq head
