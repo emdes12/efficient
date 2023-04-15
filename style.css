@@ -16,13 +16,42 @@ body {
 
 .hero-section {
   width: 100%;
-  background-image: url("./assets/images/african-american-businesswoman-passing-documents-colleague\ 1.jpg");
+  /* background-image: url("./assets/images/african-american-businesswoman-passing-documents-colleague\ 1.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 
+.slider-imgs {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-imgs img {
+  transition: transform ease-in-out 1s;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+}
+
+.slid-img-1, .slid-img-2 {
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+.slid-img-2 {
+  left: 200%;
+}
+
+
 .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   padding: 309px 30px 89px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.71);
