@@ -90,5 +90,6 @@ li.faq {
     line-height: 23px;
     display: none;
     color: #fff;
+    transition: all ease-in-out 50s;
     padding-top: 10px;
 }
