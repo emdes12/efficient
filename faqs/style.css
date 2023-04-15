@@ -51,7 +51,7 @@ ul.faqs {
 li.faq {
     padding: 20px 0;
     border-bottom: 1px solid #8DC9D3;
-    transition: height ease-in-out 500s;
+    transition: all ease-in-out 500s;
 }
 
 .faq-head {
