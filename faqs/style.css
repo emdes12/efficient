@@ -51,7 +51,7 @@ ul.faqs {
 li.faq {
     padding: 20px 0;
     border-bottom: 1px solid #8DC9D3;
-    transition: height ease-in-out 50s;
+    transition: height ease-in-out 500s;
 }
 
 .faq-head {
@@ -90,6 +90,6 @@ li.faq {
     line-height: 23px;
     display: none;
     color: #fff;
-    transition: all ease-in-out 50s;
+    transition: all ease-in-out 500s;
     padding-top: 10px;
 }
