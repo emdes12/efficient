@@ -5,7 +5,7 @@ const faq = document.querySelectorAll(".faq");
 let answerHeights = [];
 const faqAnswers = document.querySelectorAll(".faq-answer")
 
-faqAnswer.forEach(ans => {
+faqAnswers.forEach(ans => {
     const high = ans.getBoundingClientRect().height
     answerHeights.push(high)
     ans.style.height = "0px"
