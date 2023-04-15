@@ -51,6 +51,7 @@ ul.faqs {
 li.faq {
     padding: 20px 0;
     border-bottom: 1px solid #8DC9D3;
+    transition: height ease-in-out 0.5s;
 }
 
 .faq-head {
@@ -74,7 +75,8 @@ li.faq {
     display: none;
 }
 
-.faq.active .img-open {
+.faq.active .img-open,
+.faq.active .faq-answer {
     display: block;
 }
 
@@ -86,6 +88,7 @@ li.faq {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
+    display: none;
     color: #fff;
     padding-top: 10px;
 }
